@@ -26,9 +26,9 @@ const Login = () => {
       <form className="flex gap-5" onSubmit={handleSubmit(handleFormSubmit)}>
         <input type="text" placeholder="Type your name" {...register("name")} />
         <input
-          className="text-black bg-slate-200 h-[2rem] w-[150px]"
+          className="text-black bg-slate-200 h-[2rem] w-[150px] cursor-pointer"
           type="submit"
-          value="cadastrar"
+          value="cadastrar usuário"
         />
       </form>
 
