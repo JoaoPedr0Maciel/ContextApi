@@ -10,7 +10,12 @@ const Login = () => {
       name,
       token: "admin",
     };
-    login(userForm);
+
+    if (name.trim() === "") {
+      alert("Preencha o nome!");
+    } else {
+      login(userForm);
+    }
   };
 
   return (
