@@ -29,22 +29,17 @@ const Login = () => {
 
       <p className="text-white font-extrabold font-mono text-xl">
         {users?.map((user) => (
-          <div key={user.name}>
+          <div key={user.name} className="flex gap-7">
             <p className="text-white font-extrabold font-mono text-xl">
               {user.name}
             </p>
-          </div>
-        ))}
-      </p>
-      <p className="text-white font-extrabold font-mono text-xl">
-        {users?.map((user) => (
-          <div key={user.token}>
             <p className="text-white font-extrabold font-mono text-xl">
               {user.token}
             </p>
           </div>
         ))}
       </p>
+
       <button
         className="text-black bg-slate-200 h-[2rem] w-[150px]"
         onClick={logout}
